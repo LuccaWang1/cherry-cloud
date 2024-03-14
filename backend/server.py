@@ -1,7 +1,7 @@
 """Server for cloud-cherry app."""
 
 from flask import Flask, render_template, request, flash, session, redirect
-from backend.model import connect_to_db, db
+from model import connect_to_db, db
 import json
 
 app = Flask(__name__)
