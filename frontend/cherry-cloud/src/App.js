@@ -1,11 +1,9 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>Welcome to CHERRY CLOUD!</p>
         <a
           className="App-link"
@@ -15,6 +13,8 @@ function App() {
         >
           Let's code!
         </a>
+
+        <img src="cherry.webp" className="App-logo" alt="logo" />
       </header>
     </div>
   );
