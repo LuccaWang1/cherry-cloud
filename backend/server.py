@@ -28,6 +28,12 @@ def cart():
 
     return render_template("cart.html")
 
+@app.route("/reviews")
+def reviews():
+    """View reviews by cherries."""
+
+    return render_template("reviews.html")
+
 
 if __name__ == "__main__":
     connect_to_db(app)
