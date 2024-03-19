@@ -22,17 +22,23 @@ def cherries():
 
     return render_template("cherries.html")
 
-@app.route("/cart")
-def cart():
-    """View cart."""
-
-    return render_template("cart.html")
-
 @app.route("/reviews")
 def reviews():
     """View reviews by cherries."""
 
     return render_template("reviews.html")
+
+@app.route("/my-account")
+def my_account():
+    """View my account and settings."""
+
+    return render_template("my_account.html")
+
+@app.route("/cart")
+def cart():
+    """View cart."""
+
+    return render_template("cart.html")
 
 
 if __name__ == "__main__":

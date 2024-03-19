@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Account{% endblock %}</title>
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        {% block content %}
+            <h1 style="text-align:center">My Account</h1>
+            <p></p>
+            <p style="text-align:center"><em>Where my cherries ride free</em></p>
+            <p></p>
+        {% endblock %}
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

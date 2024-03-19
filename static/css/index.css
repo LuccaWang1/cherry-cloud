@@ -1,3 +1,8 @@
+/* Colors palette:
+Cherry red: #D2042D	rgb(210, 4, 45) 
+Pastel red:	#FAA0A0	rgb(250, 160, 160) 
+White */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,9 +11,45 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 25px;
+  border-radius: 5px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #D2042D;
+  overflow: hidden;
+  color: white
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #FAA0A0;
+  color: #D2042D;
+}
+
+/* Change the color of links when they are clicked */
+.topnav a:active {
+  background-color: #D2042D;
+  color: white;
+}
+
+.topnav-left {
+  float: left;
+}
+
+.topnav-right {
+  float: right;
 }

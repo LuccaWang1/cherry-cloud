@@ -22,7 +22,7 @@
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
   <!-- Our CSS stylesheets and scripts -->
-  <link rel="stylesheet" href="/cherry-cloud/frontend/src/index.css">
+  <link rel="stylesheet" href="/static/css/index.css">
 </head>
 
 <body>
@@ -35,18 +35,16 @@
   </header>
 
   <main>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="/">Cherry Cloud</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li><a href="/cherries">Cherries</a></li>
-          <li><a href="/cart">My Cart</a></li>
-          <li><a href="/reviews">Reviews</a></li>
-        </ul>
-      </div>
-    </nav>
+    <div class="topnav topnav-left">
+      <a href="/">Home</a>
+      <a href="/cherries">Cherries</a>
+      <a href="/reviews">Reviews</a>
+    </div>
+
+    <div class="topnav topnav-right">
+      <a href="/account">My Account</a>
+      <a href="/cart">My Cart</a>
+    </div>
 
     {% block content %}{% endblock %}
   </main>
