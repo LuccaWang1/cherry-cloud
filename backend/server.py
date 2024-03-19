@@ -16,6 +16,18 @@ def homepage():
 
     return render_template("homepage.html")
 
+@app.route("/cherries")
+def cherries():
+    """View cherries."""
+
+    return render_template("cherries.html")
+
+@app.route("/cart")
+def cart():
+    """View cart."""
+
+    return render_template("cart.html")
+
 
 if __name__ == "__main__":
     connect_to_db(app)

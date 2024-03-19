@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}What Bliss!{% endblock %}</title>
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        {% block content %}
+            <h1 style="text-align:center">CHERRIES</h1>
+            <p></p>
+            <p style="text-align:center"><em>Where cherries ride free</em></p>
+            <p></p>
+        {% endblock %}
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>
