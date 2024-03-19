@@ -2,15 +2,16 @@
 
 ## Features
 
--
--
--
+- Shop, Cart 
+- Blog, Reviews
+- 
 
 ## Requirements
 
 - Python 3
 - PostgeSQL
 - React
+- JavaScript
 
 ## How to use
 
