@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block head %}{% endblock %}
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>{% block title %}What Bliss!{% endblock %}</title>
+
+  <!-- Link to SVG Favicon -->
+  <link rel="icon" type="image/webp" href="/frontend/cherry-cloud/public/cherry.webp">
+  
+  <!-- React and ReactDOM from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossorigin></script>
+
+  <script
+  src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"
+  crossorigin></script>
+
+  <!--Babel JS-->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Our CSS stylesheets and scripts -->
+  <link rel="stylesheet" href="/frontend/cherry-cloud/src/index.css">
+</head>
+
+<body>
+  <header>
+    <ul>
+      {% for message in get_flashed_messages() %}
+        <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+  </header>
+
+  <main>
+    <!-- navbar -->
+    <div> 
+      <a href="/home">Here&Now</a>
+      <a href="/cherries">Cherries</a>
+      <a href="/cart">My Cart</a>
+    </div>
+
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer></footer>
+
+  <script type="text/jsx" src="/frontend/cherry-cloud/src/App.jsx"></script>
+  <script type="text/jsx" src="/frontend/cherry-cloud/src/index.jsx"></script>
+</body>
+</html>
