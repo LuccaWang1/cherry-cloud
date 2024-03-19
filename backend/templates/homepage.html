@@ -2,21 +2,27 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{% endblock %}</title>
+    <title>{% block title %}What Bliss!{% endblock %}</title>
 </head>
+
 <body>
     <header></header>
+
     <main>
         {% block content %}
-            <h1>Welcome to Cherry Cloud!</h1>
+            <h1 style="text-align:center">Welcome to Cherry Cloud!</h1>
             <p></p>
             <p style="text-align:center"><em>Where cherries ride free</em></p>
             <p></p>
+            <img src="/cherry-cloud/frontend/public-static/images/cherry_bunch_tree_burak_tonc.jpg" alt="Cherries hanging from tree">
         {% endblock %}
     </main>
+
     <footer></footer>
 </body>
+
 </html>
