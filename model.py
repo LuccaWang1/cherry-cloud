@@ -10,7 +10,7 @@ class User(db.Model):
 
     __tablename__ = "users"
 
-    user_id = db.Column(db.Integer, autoincrementing=True, primary_key=True)
+    user_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     username = db.Column(db.String(25), nullable=False)
     user_email = db.Column(db.String(40), unique=True, nullable=False)  
 
@@ -24,7 +24,7 @@ class Post(db.Model):
 
     __tablename__ = "posts"
 
-    post_id = db.Column(db.Integer, autoincrementing=True, primary_key=True)
+    post_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     title = db.Column(db.String(25), nullable=False)
     body = db.Column(db.Text, nullable=False)
 
