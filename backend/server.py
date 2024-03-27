@@ -7,7 +7,7 @@ from model import connect_to_db
 import json
 
 app = Flask(__name__)
-app.secret_key = os.environ["KEY"]
+# app.secret_key = os.environ["KEY"]
 app.jinja_env.undefined = StrictUndefined
 
 @app.route("/")
@@ -21,6 +21,12 @@ def cherries():
     """View cherries."""
 
     return render_template("cherries.html")
+
+@app.route("/flappy_cherry")
+def flappy_cherry():
+    """View game."""
+
+    return render_template("flappy_cherry.html")
 
 @app.route("/reviews")
 def reviews():
