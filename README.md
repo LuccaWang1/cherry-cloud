@@ -2,9 +2,11 @@
 
 ## Features
 
-- Shop, Cart 
+- Shop, Cart
 - Blog, Reviews
-- 
+- Game, Profile
+- Feedback, Support
+- Dark mode, Weather info
 
 ## Requirements
 
