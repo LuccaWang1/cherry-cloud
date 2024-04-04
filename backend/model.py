@@ -46,7 +46,7 @@ def connect_to_db(flask_app, db_uri="postgresql:///cherry-cloud", echo=True):
 
 
 if __name__ == "__main__":
-    from server import app
+    from backend.server import app
     
     connect_to_db(app)
 
