@@ -3,7 +3,7 @@
 import os
 from jinja2 import StrictUndefined
 from flask import Flask, render_template, request, flash, session, redirect
-from model import connect_to_db
+from backend.model import connect_to_db
 import json
 
 app = Flask(__name__)
