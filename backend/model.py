@@ -21,7 +21,8 @@ class User(db.Model):
     username = db.Column(db.String(25), nullable=False)
     user_email = db.Column(db.String(40), unique=True, nullable=False)
     user_password = db.Column(db.String(10), unique=True, nullable=False)
-    user_personal_best = db.Column(db.Integer) #flappy_cherry score
+    user_max_score = db.Column(db.Integer) #flappy_cherry score
+    user_likes = db.Column(db.Integer) #post_id's of posts liked by the user
 
     #posts = db.relationship("Post", back_populates="users") 
 
@@ -43,6 +44,7 @@ class Post(db.Model):
     post_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     title = db.Column(db.String(25), nullable=False)
     body = db.Column(db.Text, nullable=False)
+    likes = db.Column(db.Integer, nullable=False) #amt of likes on one post 
 
     users = db.relationship("User", back_populates="posts") #add secondary if many to many relationship - thinking yes 
 
