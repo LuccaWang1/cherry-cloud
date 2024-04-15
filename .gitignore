@@ -1,7 +1,8 @@
 secrets.sh
 /env
 .pyc
-*pyc
+*pyc*
+*secrets*
 
 
 
