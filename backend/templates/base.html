@@ -1,57 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  {% block head %}{% endblock %}
+  <head>
+    {% block head %}{% endblock %}
 
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
-  <title>{% block title %}{% endblock %}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Link to SVG Favicon -->
-  <link rel="icon" type="image/x-icon" href="cherry-cloud/frontend/public-static/images/favicon_icons8-cherry-48.png" alt="https://icons8.com">
-  
-  <!-- React and ReactDOM from CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossorigin></script>
+    <title>{% block title %}{% endblock %}</title>
 
-  <script
-  src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"
-  crossorigin></script>
+    <!-- Link to SVG Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="cherry-cloud/frontend/public/images/favicon/favicon_icons8-cherry-48.png"
+      alt="https://icons8.com"
+    />
 
-  <!--Babel JS-->
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- React and ReactDOM from CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js"
+      crossorigin
+    ></script>
 
-  <!-- Our CSS stylesheets and scripts -->
-  <link rel="stylesheet" href="/static/css/index.css">
-</head>
+    <script
+      src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
 
-<body>
-  <header>
-    <ul>
-      {% for message in get_flashed_messages() %}
+    <!--Babel JS-->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Our CSS stylesheets and scripts -->
+    <link rel="stylesheet" href="/static/css/index.css" />
+  </head>
+
+  <body>
+    <header>
+      <ul>
+        {% for message in get_flashed_messages() %}
         <li>{{ message }}</li>
-      {% endfor %}
-    </ul>
-  </header>
+        {% endfor %}
+      </ul>
+    </header>
 
-  <main>
-    <div class="topnav topnav-left">
-      <a href="/">Home</a>
-      <a href="/cherries">Cherries</a>
-      <a href="/reviews">Reviews</a>
-    </div>
+    <main>
+      <div>
+        <img
+          src="cherry-cloud/frontend/public/images/cherry.webp"
+          alt="Cherry Logo"
+        />
+      </div>
+      <div class="topnav topnav-left">
+        <a href="/">Home</a>
+        <a href="/cherries">Cherries</a>
+        <a href="/reviews">Reviews</a>
+      </div>
 
-    <div class="topnav topnav-right">
-      <a href="/my-account">My Account</a>
-      <a href="/cart">My Cart</a>
-    </div>
+      <div class="topnav topnav-right">
+        <a href="/my-account">My Account</a>
+        <a href="/cart">My Cart</a>
+      </div>
 
-    {% block content %}{% endblock %}
-  </main>
+      {% block content %}{% endblock %}
+    </main>
 
-  <footer></footer>
+    <footer></footer>
 
-  <!-- <script type="text/jsx" src="/frontend/cherry-cloud/src/App.jsx"></script>
+    <!-- <script type="text/jsx" src="/frontend/cherry-cloud/src/App.jsx"></script>
   <script type="text/jsx" src="/frontend/cherry-cloud/src/index.jsx"></script> -->
-</body>
+  </body>
 </html>
