@@ -2,7 +2,7 @@
 
 # Cherry Cloud
 
-<img src="/static/images/cherry.webp" alt="Cherry Logo" />
+<img src="/static/images/cherry.webp" alt="Cherry Logo" width="100px" height="100px" />
 
 _The Cherry Cloud logo_
 
