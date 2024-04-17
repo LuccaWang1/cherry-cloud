@@ -43,7 +43,7 @@ Cherry Cloud is a full stack web app built from scratch by Agne Djacenko and Luc
 - Romantic mode
 - User feedback, ongoing maintenance
 
-[Back to the Table of Contents](#index) 
+[Back to the Table of Contents](#index)
 
 <a name="tech"></a>
 
@@ -72,6 +72,7 @@ Cherry Cloud is a full stack web app built from scratch by Agne Djacenko and Luc
 This will be updated 
 
 [Back to the Table of Contents](#index) 
+
 <a name="run"></a>
 
 ## How to Run
@@ -114,8 +115,10 @@ $ python3 tests.py
 
 ### Authors 
 
-- Agne Djacenko
-- Lucca Wang
+We are software engineers. Feel free to connect on LinkedIn!
+
+- [Agne Djacenko](https://www.linkedin.com/in/agne-djacenko/)
+- [Lucca Wang](https://www.linkedin.com/in/luccawang/)
 
 [Back to the Table of Contents](#index) 
 
