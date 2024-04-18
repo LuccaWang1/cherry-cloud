@@ -125,7 +125,7 @@ We are software engineers. This is our collaborative project we set out to creat
 
 ### How to Contribute
 
-You can only contribute to this project if you are listed as a collaborator on the project remote repo in GitHub. (You must respond to the email sent to you from Github and accept the invitation to become a contributor on the project.)
+You contribute to this project if you are listed as a collaborator on the project remote repo in GitHub. (You must respond to the email sent to you from Github and accept the invitation to become a contributor on the project.)
 
 #### Git
 
