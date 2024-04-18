@@ -114,8 +114,10 @@ $ python3 tests.py
 
 ### Authors
 
-- Agne Djacenko
-- Lucca Wang
+We are software engineers. Feel free to connect on LinkedIn!
+
+- [Agne Djacenko](https://www.linkedin.com/in/agne-djacenko/)
+- [Lucca Wang](https://www.linkedin.com/in/luccawang/)
 
 [Back to the Table of Contents](#index)
 
