@@ -114,7 +114,7 @@ $ python3 tests.py
 
 ### Authors
 
-We are software engineers. Feel free to connect on LinkedIn!
+We are software engineers. This is our collaborative project we set out to create together post-Hackbright, a 12-week software engineering fellowship. Feel free to connect on LinkedIn!
 
 - [Agne Djacenko](https://www.linkedin.com/in/agne-djacenko/)
 - [Lucca Wang](https://www.linkedin.com/in/luccawang/)
