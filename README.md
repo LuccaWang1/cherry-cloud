@@ -71,7 +71,12 @@ Cherry Cloud is a full stack web app built from scratch by Agne Djacenko and Luc
 
 This will be updated
 
+<<<<<<< HEAD
 [Back to the Table of Contents](#index)
+=======
+[Back to the Table of Contents](#index) 
+
+>>>>>>> 05a336db7eb8bd85994856e2d92bbcb5fdef2172
 <a name="run"></a>
 
 ## How to Run
