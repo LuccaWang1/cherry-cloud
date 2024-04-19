@@ -24,6 +24,8 @@ class User(db.Model):
     user_max_score = db.Column(db.Integer) #flappy_cherry score
     user_likes = db.Column(db.Integer) #post_id's of posts liked by the user
 
+    #uncommented b/c received error that Post & user tbls not connected
+    #didn't work, commented out again
     #posts = db.relationship("Post", back_populates="users") 
 
     def __init__(self, username, user_email, user_password):
@@ -46,7 +48,8 @@ class Post(db.Model):
     body = db.Column(db.Text, nullable=False)
     likes = db.Column(db.Integer, nullable=False) #amt of likes on one post 
 
-    users = db.relationship("User", back_populates="posts") #add secondary if many to many relationship - thinking yes 
+    #removing link for now, to bypass error
+    #users = db.relationship("User", back_populates="posts") #add secondary if many to many relationship - thinking yes 
 
     def __init__(self, title, body):
         self.title = title 
@@ -65,7 +68,8 @@ class Feedback(db.Model):
     feedback_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     feedback_body = db.Column(db.Text, nullable=False)
 
-    users = db.relationship("User", back_populates="feedback") #add secondary if many to many relationship - thinking yes 
+    #commenting out for now, raising error
+    #users = db.relationship("User", back_populates="feedback") #add secondary if many to many relationship - thinking yes 
 
     def __init__(self, body):
         self.feedback_body = body

@@ -18,9 +18,10 @@
             <p></p>
             <p style="text-align:center"><em>Where cherries ride free with thought</em></p>
             <p></p>
-            {{ for posts in all_posts}}
+            {% for post in posts %}
+                <p>{{post}}</p>
                 <!-- layout -->
-            {{end for}}
+            {% endfor %}
         {% endblock %}
     </main>
 

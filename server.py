@@ -32,9 +32,9 @@ def cherries():
 def reviews():
     """View reviews by cherries."""
 
-    crud.retrieve_all_posts()
+    all_posts = crud.retrieve_all_posts()
 
-    return render_template("reviews.html")
+    return render_template("reviews.html", posts=all_posts)
 
 
 @app.route("/my-account")
