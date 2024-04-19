@@ -5,6 +5,7 @@ from jinja2 import StrictUndefined
 from flask import Flask, render_template, request, flash, session, redirect
 from model import connect_to_db, db, User, Post, Feedback, Cherry, Cherry_Cart, Cart
 import json
+import crud
 
 app = Flask(__name__, static_folder='static',
             static_url_path='/static')
@@ -30,6 +31,8 @@ def cherries():
 @app.route("/reviews")
 def reviews():
     """View reviews by cherries."""
+
+    crud.retrieve_all_posts()
 
     return render_template("reviews.html")
 
