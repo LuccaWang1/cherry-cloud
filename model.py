@@ -27,6 +27,7 @@ class User(db.Model):
 
     # posts = db.relationship("Post", back_populates="users")
 
+
     def __init__(self, username, user_email, user_password):
         self.username = username
         self.user_email = user_email
@@ -48,8 +49,8 @@ class Post(db.Model):
     body = db.Column(db.Text, nullable=False)
     likes = db.Column(db.Integer, nullable=False)  # amt of likes on one post
 
-    # add secondary if many to many relationship - thinking yes
-    users = db.relationship("User", back_populates="posts")
+    #removing link for now, to bypass error
+    #users = db.relationship("User", back_populates="posts") #add secondary if many to many relationship - thinking yes 
 
     def __init__(self, title, body):
         self.title = title
@@ -69,8 +70,9 @@ class Feedback(db.Model):
     feedback_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     feedback_body = db.Column(db.Text, nullable=False)
 
-    # add secondary if many to many relationship - thinking yes
-    users = db.relationship("User", back_populates="feedback")
+    #commenting out for now, raising error
+    #users = db.relationship("User", back_populates="feedback") #add secondary if many to many relationship - thinking yes 
+
 
     def __init__(self, body):
         self.feedback_body = body

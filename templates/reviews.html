@@ -18,6 +18,10 @@
             <p></p>
             <p style="text-align:center"><em>Where cherries ride free with thought</em></p>
             <p></p>
+            {% for post in posts %}
+                <p>{{post}}</p>
+                <!-- layout -->
+            {% endfor %}
         {% endblock %}
     </main>
 
